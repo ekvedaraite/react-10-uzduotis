@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background: #9fdaff;
+  font-family: montserrat;
+}
+
+header {
+  background: #00b9ff;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 34px;
+}
+
+.input-container {
+  width: 90%;
+  max-width: 850px;
+  margin: auto;
+  margin-top: -34px;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  height: 68px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #03a7e4;
+  color: white;
+  font-size: 16px;
+  text-indent: 40px; /* vietoje padding left 40px */
+}
+
+.input-container input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+#add {
+  position: absolute;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #00b9ff;
+}
+
+#add:hover {
+  cursor: pointer;
+  background: #2590b9;
+}
+
+#add svg {
+  width: 18px;
+  height: 18px;
+}
+
+.list-item {
+  list-style: none;
+  min-height: 55px;
+  width: 90%;
+  max-width: 850px;
+  background: #00b9ff;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 5px #71a7ca;
+  box-sizing: border-box;
+}
+
+.list-item .remove {
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.list-item .remove  i {
+  color: white;
+  font-size: 1.2em;
+}
+
+.list-item .edit {
+  display: inline-block;
+  background: none;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  margin-right: 10px;
+}
+
+.list-item textarea {
+  background: #03a7e4;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px;
+  outline: none;
+  margin-left: -10px;
+  border-radius: 4px;
+  min-height: 100px;
+  width: 100%;
+  resize: none;
+}
+
+
+.list-item i:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.list-item .buttons {
+  display: flex;
+  min-width: 50px;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
